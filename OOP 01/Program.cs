@@ -1,9 +1,22 @@
 ﻿using System;
-
+using System.ComponentModel;
+using Common;
 namespace OOP_01
 {
+
+    //What You Can Write Inside Namespace???
+    //   1.Class
+    //   2.Struct
+    //   3.Interface
+    //   4.Enum
+
+    // Access Modifier Allowed Inside Namespace
+    // 1. Internal [default]
+    // 2. Public
+
     internal class Program
     {
+        #region Exception Handling
         static void DoSomeCode()
         {
             try
@@ -55,8 +68,16 @@ namespace OOP_01
 
         }
 
+        #endregion
+
+        #region MyRegion
+
+        #endregion
+
         static void Main(string[] args)
         {
+            #region Exception Handling
+
             //DoSomeCode(); //Runtime Errors [Exceptions]
 
             // Exception
@@ -81,15 +102,34 @@ namespace OOP_01
             //}
             //finally
             //{
-                // Close | Delete | Release | Deallocate Unmanaged Resources
-                // Open File
-                // Connection With Database
-        //        Console.WriteLine("finally");
-        //    }
+            // Close | Delete | Release | Deallocate Unmanaged Resources
+            // Open File
+            // Connection With Database
+            //        Console.WriteLine("finally");
+            //    }
 
-        //    Console.WriteLine("After Try Catch");
+            //    Console.WriteLine("After Try Catch");
 
 
-          }
+            #endregion
+
+            #region Access Modifiers
+
+            //TypeA obj = new TypeA(); //Valid
+
+            //TypeB obj2 = new Common.TypeB(); // Invalid [Internal] 
+            // 'TypeB' is inaccessible due to its protection
+
+            //obj.X = 10; //INVALID >>'TypeA.X' is inaccessible due to its protection levet
+                        // X is Private
+
+            //obj.Y = 20; // Invalid
+            //Y is internal
+
+            //obj.Z = 30; // Valid
+            //Z is Public
+            #endregion
+
+        }
     }
 }
