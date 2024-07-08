@@ -133,7 +133,44 @@ namespace Assignments
     //}
     #endregion
 
+    #region 5.  Create a struct called "Point" to represent a 2D point with properties "X" and "Y". Write a C# program that takes two points as input from the user and calculates the distance between them.
 
+    //struct Point
+    //{
+    //    public double X { get; set; }
+    //    public double Y { get; set; }
+
+    //    public Point(double x, double y)
+    //    {
+    //        X = x;
+    //        Y = y;
+    //    }
+
+    //    public double DistanceTo(Point other)
+    //    {
+    //        double dx = X - other.X;
+    //        double dy = Y - other.Y;
+    //        return Math.Sqrt(dx * dx + dy * dy);
+    //    }
+    //}
+    
+    //class Program
+    //{
+    //    static void Main()
+    //    {
+    //        Console.WriteLine("Enter coordinates for Point 1 (x y):");
+    //        string[] point1Input = Console.ReadLine().Split();
+    //        Point point1 = new Point(double.Parse(point1Input[0]), double.Parse(point1Input[1]));
+
+    //        Console.WriteLine("Enter coordinates for Point 2 (x y):");
+    //        string[] point2Input = Console.ReadLine().Split();
+    //        Point point2 = new Point(double.Parse(point2Input[0]), double.Parse(point2Input[1]));
+
+    //        double distance = point1.DistanceTo(point2);
+    //        Console.WriteLine($"Distance between points: {distance}");
+    //    }
+    //}
+    #endregion
 
 
 
