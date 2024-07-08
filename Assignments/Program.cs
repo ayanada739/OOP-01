@@ -74,6 +74,37 @@ namespace Assignments
 
     #endregion
 
+    #region 3.  Assign the following Permissions (Read, write, Delete, Execute) in a form of Enum. ⮚  Create Variable from previous Enum to Add and Remove Permission from variable, check if specific Permission is existed inside variable
+
+    //[Flags]
+    //enum Permissions
+    //{
+    //    None = 0,
+    //    Read = 1,
+    //    Write = 2,
+    //    Delete = 4,
+    //    Execute = 8
+    //}
+
+    //class Program
+    //{
+    //    static void Main()
+    //    {
+    //        Permissions userPermissions = Permissions.Read | Permissions.Write;
+    //        Console.WriteLine("Initial Permissions: " + userPermissions);
+
+    //        userPermissions |= Permissions.Execute;
+    //        Console.WriteLine("After adding Execute: " + userPermissions);
+
+    //        userPermissions &= ~Permissions.Write;
+    //        Console.WriteLine("After removing Write: " + userPermissions);
+
+    //        bool hasDelete = (userPermissions & Permissions.Delete) == Permissions.Delete;
+    //        Console.WriteLine("Has Delete Permission: " + hasDelete);
+    //    }
+    //}
+    #endregion
+
 
 
 
